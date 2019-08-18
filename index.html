@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de Java Script</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id="nome" type="text" name="nome" class="nome"/>
+            <button class="botao">Adicionar</button>
+            <br>
+            <div class="box"></div>
+            
+
+        </div>
+        <script>
+           var inputElement = document.querySelector("input[name=nome]");
+           var btnElement = document.querySelector('button.botao');
+            btnElement.onclick = function(){
+                alert(inputElement.value);
+                
+            }
+           //*******************************************
+           var linkElement = document.createElement('a');
+           linkElement.setAttribute('href', 'http://rocketseat.com.br');
+           linkElement.setAttribute('title', 'Site da RockSeat');
+           var textElement = document.createTextNode('Acessar Site da Rockseat');
+           linkElement.appendChild(textElement);
+           var containerElement = document.querySelector("#app");
+           containerElement.appendChild(linkElement);
+           var inputElement2 = document.querySelector('#nome');
+           containerElement.removeChild(inputElement2);
+           var boxElement =document.querySelector('.box');
+           boxElement.style.width = 100;
+           boxElement.style.height = 100;
+           boxElement.style.backgroundColor = '#f00';
+
+
+            
+            //soma(1,1);
+            //setTimeout(exibeAlgo,5000);
+        </script>
+    </body>
+</html>
