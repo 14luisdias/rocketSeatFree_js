@@ -6,6 +6,7 @@
     <body>
         <div id="app">
             <input id="nome" type="text" name="nome" class="nome"/>
+
             <button class="botao">Adicionar</button>
             <br>
             <div class="box"></div>
@@ -22,18 +23,18 @@
             console.log(inputElement);
            //*******************************************
            var linkElement = document.createElement('a');
-           linkElement.setAttribute('href', 'http://rocketseat.com.br');
-           linkElement.setAttribute('title', 'Site da RockSeat');
+            linkElement.setAttribute('href', 'http://rocketseat.com.br');
+            linkElement.setAttribute('title', 'Site da RockSeat');
            var textElement = document.createTextNode('Acessar Site da Rockseat');
-           linkElement.appendChild(textElement);
+            linkElement.appendChild(textElement);
            var containerElement = document.querySelector("#app");
            containerElement.appendChild(linkElement);
-           var inputElement2 = document.querySelector('#nome');
-           containerElement.removeChild(inputElement2);
-           var boxElement =document.querySelector('.box');
-           boxElement.style.width = 100;
-           boxElement.style.height = 100;
-           boxElement.style.backgroundColor = '#f00';
+        //    var inputElement2 = document.querySelector('#nome');
+        //    containerElement.removeChild(inputElement2);
+        //    var boxElement =document.querySelector('.box');
+        //    boxElement.style.width = 100;
+        //    boxElement.style.height = 100;
+        //    boxElement.style.backgroundColor = '#f00';
 
 
             
